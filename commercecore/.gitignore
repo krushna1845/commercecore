@@ -1,0 +1,24 @@
+# IntelliJ
+.idea/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.*
+
+# Node
+node_modules/
+
+# Maven
+target/
+
+# OS
+.DS_Store
+Thumbs.db
+commerce-frontend/.env
+commercecore/.env
