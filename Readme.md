@@ -158,22 +158,54 @@ The goal of this project was to gain practical experience in building enterprise
 
 ---
 
-# 🏗 Architecture
+# 🏗️ CommerceCore System Architecture
 
 ```
-                     React Frontend
-                           │
-                           │ REST API
-                           ▼
-                 Spring Boot Backend
-                           │
-        ┌──────────────────┼───────────────────┐
-        │                  │                   │
-      MySQL             JWT Auth          WebSocket
-        │                  │                   │
-        └──────────────────┼───────────────────┘
-                           │
-                    AWS EC2 Deployment
+                           ┌──────────────────────────────┐
+                           │          End Users           │
+                           │  Customer | Seller | Admin   │
+                           └──────────────┬───────────────┘
+                                          │
+                                          │ HTTP / HTTPS
+                                          ▼
+                           ┌──────────────────────────────┐
+                           │        React Frontend        │
+                           │ React + JavaScript +         │
+                           │ Tailwind CSS + Axios         │
+                           └──────────────┬───────────────┘
+                                          │
+                                          │ REST API
+                                          ▼
+                    ┌─────────────────────────────────────────┐
+                    │      Spring Boot REST API Backend       │
+                    │                                         │
+                    │  • Spring Security                      │
+                    │  • JWT Authentication                   │
+                    │  • Validation                           │
+                    │  • Business Logic                       │
+                    │  • Exception Handling                   │
+                    └──────────────┬──────────────────────────┘
+                                   │
+                 ┌─────────────────┼───────────────────┐
+                 │                 │                   │
+                 ▼                 ▼                   ▼
+        Authentication      Product Services     Order Services
+        User Management     Category             Checkout
+        JWT Token           Search               Payments
+        Roles               Reviews              Inventory
+                             Wishlist            Notifications
+                                   │
+                                   ▼
+                    ┌──────────────────────────────┐
+                    │      Spring Data JPA         │
+                    │        Hibernate ORM         │
+                    └──────────────┬───────────────┘
+                                   │
+                                   ▼
+                        ┌────────────────────┐
+                        │     MySQL 8        │
+                        │   Relational DB    │
+                        └────────────────────┘
 ```
 
 ---
@@ -215,24 +247,27 @@ The goal of this project was to gain practical experience in building enterprise
 # 📂 Project Structure
 
 ```
-CommerceCore
+commercecore
 │
-├── commerce-frontend
-│     ├── src
-│     ├── components
-│     ├── pages
-│     ├── services
-│     └── context
+├── commerce-frontend/
+│   ├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── hooks/
+│   ├── context/
+│   └── assets/
 │
-├── commercecore
-│     ├── controller
-│     ├── service
-│     ├── repository
-│     ├── entity
-│     ├── dto
-│     ├── security
-│     ├── config
-│     └── util
+├── commercecore/
+│   ├── controller/
+│   ├── service/
+│   ├── repository/
+│   ├── entity/
+│   ├── dto/
+│   ├── config/
+│   ├── security/
+│   ├── exception/
+│   └── util/
 │
 └── README.md
 ```
