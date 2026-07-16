@@ -257,37 +257,43 @@ Protected endpoints are secured using Spring Security.
 
 ## Home
 
-![Home](screenshots/home.png)
+<img width="1883" height="908" alt="Screenshot 2026-07-15 161519" src="https://github.com/user-attachments/assets/7506ebf1-fd58-4682-97c5-7dc1f7b196c6" />
+
 
 ---
 
 ## Product Listing
 
-![Products](screenshots/products.png)
+<img width="1911" height="910" alt="Screenshot 2026-07-15 161932" src="https://github.com/user-attachments/assets/1d0b18f4-ce96-4a48-b841-01387f4bcc72" />
+
 
 ---
 
 ## Product Details
 
-![Details](screenshots/product-details.png)
+<img width="1893" height="909" alt="Screenshot 2026-07-15 161953" src="https://github.com/user-attachments/assets/3bf70923-f67d-4a06-890a-2b1a541cab11" />
+
 
 ---
 
 ## Shopping Cart
 
-![Cart](screenshots/cart.png)
+<img width="1914" height="907" alt="Screenshot 2026-07-15 161907" src="https://github.com/user-attachments/assets/d28befbf-2820-461b-acac-be237231e78e" />
+
 
 ---
 
 ## Seller Dashboard
 
-![Seller](screenshots/seller-dashboard.png)
+<img width="1919" height="916" alt="Screenshot 2026-07-15 161549" src="https://github.com/user-attachments/assets/d3f72622-9128-4b62-a100-3244f68c2eea" />
+
 
 ---
 
 ## Admin Dashboard
 
-![Admin](screenshots/admin-dashboard.png)
+<img width="1893" height="919" alt="Screenshot 2026-07-15 161738" src="https://github.com/user-attachments/assets/80fa9069-9bbe-4e3b-a7ac-98b93a5d103a" />
+
 
 ---
 
